@@ -141,7 +141,6 @@ let number = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '.']
 let operations = ['+', '-', '*', '/']
 
 window.addEventListener('keydown', function (event) {
-  console.log(event.key)
   if (number.includes(event.key)) calculator.appendNumber(event.key)
   if (operations.includes(event.key)) calculator.chooseOperation(event.key)
   if (event.key === '=') calculator.compute()
